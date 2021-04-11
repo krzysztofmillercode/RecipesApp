@@ -1,0 +1,13 @@
+@import "../../../varriables.scss";
+
+.subcategory {
+    &--title,
+    &--description {
+       color: $color-primary;
+    } 
+    &--picture {
+       margin: auto;
+       display: block;
+       max-width: 100%;
+    } 
+ }

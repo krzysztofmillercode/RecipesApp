@@ -1,0 +1,7 @@
+<div class="pagination">
+    <button class="pagination--button" [disabled]="!hasPrev" (click)="goToPage(0)"><<</button>
+    <button class="pagination--button" *ngIf="hasPrev" (click)="goToPage(this.currentPage - 1)">{{ currentPage - 1 }}</button>
+    <button class="pagination--button" disabled>{{ currentPage }}</button>
+    <button class="pagination--button" *ngIf="hasNext" (click)="goToPage(this.currentPage + 1)">{{ currentPage + 1 }}</button>
+    <button class="pagination--button" [disabled]="!hasNext" (click)="goToPage(this.lastPage)">>></button>
+</div>

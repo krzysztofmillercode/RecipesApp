@@ -1,0 +1,42 @@
+@import "../../../varriables.scss";
+
+.category {
+    &--title,
+    &--description {
+        color: $color-primary;
+    }
+}
+
+.subcategory {
+    &--item {
+        margin-bottom: $space-double;  
+    }
+    &--link { 
+        color: $color-primary;
+    }
+    &--picture {
+        max-width: 100%;            
+    }
+    &--description {
+        vertical-align: top;
+        box-sizing: border-box;
+    }
+    &--title {
+        margin-top: 0;
+    }
+    &--recipe {
+        color: $color-primary;
+    }
+
+    @media screen and (min-width: 960px) {
+        &--picture {
+            display: inline-block;
+            width: 600px;            
+        }
+        &--description {
+            display: inline-block;
+            width: calc(100% - 600px);
+            padding: 0 $space-default;
+        }
+    }
+}

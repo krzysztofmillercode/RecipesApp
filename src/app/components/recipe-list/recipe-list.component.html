@@ -1,0 +1,25 @@
+<ul class="list">
+    <li class="list-item" *ngIf="hasCreate">
+        <a routerLink="/create">
+            <div class="list-item--picture list-item--picture__create">
+                <div>
+                    +     
+                </div>
+            </div>
+            <p class="list-item--description">Create</p>
+        </a>
+    </li>
+    <li class="list-item" *ngFor="let recipe of recipes">
+        <a routerLink="/show/{{ recipe.id }}">
+            <img
+                width="300px"
+                height="200px"
+                class="list-item--picture"
+                src="{{ recipe.pictureUrl }}"
+                alt="{{ recipe.name }}"
+            />
+            <h2 class="list-item--title">{{ recipe.name | title: recipe.cousine }}</h2>
+            <h3 class="list-item--description">Cooking Time: {{ recipe.cookingTime | time }}</h3>
+        </a>
+    </li>
+</ul>

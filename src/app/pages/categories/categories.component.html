@@ -1,0 +1,16 @@
+<ul>
+    <li *ngFor="let category of categories">
+        <a class="categories--link" routerLink="/category/{{category.id}}">
+            <h2>{{category.title}}</h2>
+            <p>{{category.description}}</p>
+        </a>
+        <ul>
+            <li class="categories--subcategory-item" *ngFor="let subcategory of category.values">
+                <a class="categories--link" routerLink="/category/{{category.id}}/{{subcategory.id}}">
+                    <h3>{{subcategory.title}}</h3>
+                    <p>{{subcategory.description}}</p>
+                </a>
+            </li>
+        </ul>
+    </li>
+</ul>

@@ -1,0 +1,6 @@
+<div *ngIf="subcategory">
+    <h1 class="subcategory--title">{{subcategory.title}}</h1>
+    <p class="subcategory--description">{{subcategory.description}}</p>
+    <img class="subcategory--picture" src="{{subcategory.pictureUrl}}" alt="{{subcategory.title}}" />
+    <app-recipe-list [recipes]="subcategory.recipes"></app-recipe-list>
+</div>

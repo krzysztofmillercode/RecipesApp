@@ -1,0 +1,25 @@
+<div *ngIf="category">
+    <h1 class="category--title">{{ category.title }}</h1>
+    <p class="category--description">{{ category.description }}</p>
+    <ul>
+        <li class="subcategory--item" *ngFor="let subcategory of category.values">
+            <a class="subcategory--link" routerLink="/category/{{ category.id }}/{{ subcategory.id }}">
+                <img class="subcategory--picture" src="{{ subcategory.pictureUrl }}" alt="{{ subcategory.title }}" />
+                <div class="subcategory--description">
+                    <h2 class="subcategory--title">{{ subcategory.title }}</h2>
+                    <p>{{ subcategory.description }}</p>
+                    <p>
+                        <a 
+                            class="subcategory--recipe" 
+                            *ngFor="let recipe of subcategory.recipesExample; let last = last;" 
+                            routerLink="/show/{{recipe.id}}"
+                        >
+                            {{ recipe.name }}<span *ngIf="!last">,</span>
+                        </a>
+                        <span>...</span>
+                    </p>
+                </div>
+            </a>
+        </li>
+    </ul>
+</div>

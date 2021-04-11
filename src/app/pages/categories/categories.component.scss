@@ -1,0 +1,12 @@
+@import "../../../varriables.scss";
+
+.categories {
+    &--link {
+        color: $color-primary;
+    }
+    &--subcategory-item {
+        margin-left: $space-default;
+        border-left: 1px solid $color-primary;
+        padding-left: $space-default;
+    }
+}

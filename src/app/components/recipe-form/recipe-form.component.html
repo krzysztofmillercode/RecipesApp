@@ -1,0 +1,83 @@
+<div *ngIf="recipe">
+    <img
+        src="{{ recipe.pictureUrl }}"
+        width="900"
+        height="600"
+        alt="{{ recipe.name }}"
+        />
+    <form #f="ngForm" (ngSubmit)="onSubmit()" class="form">
+        <div class="form--group">
+            <label for="pictureUrl">Adres obrazka:</label>
+            <input 
+                class="form--input"
+                type="text"
+                [(ngModel)]="recipe.pictureUrl"
+                name="pictureUrl"
+                id="pictureUrl"
+            /> 
+        </div>
+        <div class="form--group">
+            <label for="name">Nazwa:</label>
+            <input 
+                class="form--input"
+                type="text"
+                [(ngModel)]="recipe.name"
+                name="name"
+                id="name"
+                required
+            /> 
+        </div>
+        <div class="form--group">
+            <label for="cousine">Kuchnia:</label>
+            <input 
+                class="form--input"
+                type="text"
+                [(ngModel)]="recipe.cousine"
+                name="cousine"
+                id="cousine"
+            /> 
+        </div>
+        <div class="form--group">
+            <label for="type">Typ:</label>
+            <input 
+                class="form--input"
+                type="text"
+                [(ngModel)]="recipe.type"
+                name="type"
+                id="type"
+            /> 
+        </div>
+        <div class="form--group">
+            <label for="cookingTime">Czas w minutach:</label>
+            <input 
+                class="form--input"
+                type="text"
+                [(ngModel)]="recipe.cookingTime"
+                name="cookingTime"
+                id="cookingTime"
+            /> 
+        </div>
+        <div class="form--group">
+            <label for="ingredients">Składniki:</label>
+            <textarea
+                class="form--textarea"
+                [(ngModel)]="recipe.ingredients"
+                name="ingredients"
+                id="ingredients"
+            ></textarea> 
+        </div>
+        <div class="form--group">
+            <label for="description">Przepis:</label>
+            <textarea
+                class="form--textarea form--textarea__big"
+                [(ngModel)]="recipe.description"
+                name="description"
+                id="description"
+            ></textarea> 
+        </div>
+        <div class="form--group form--group__buttons">
+            <button class="form--button" type="submit" [disabled]="!f.valid">Zapisz</button>
+            <a class="form--button" routerLink="{{ cancelUrl }}">Anuluj</a>
+        </div>
+    </form>
+</div>

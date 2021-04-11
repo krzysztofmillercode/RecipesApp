@@ -1,0 +1,58 @@
+@import "../../../varriables.scss";
+
+.form {
+    padding-bottom: $space-default;
+
+    &--group {
+        padding-top: $space-default;
+        
+        &__buttons {
+            padding-left: 170px;
+        }
+
+        & > label {
+            color: $color-primary;
+            display: inline-block;
+            width: 150px;
+            padding: $space-half $space-default;
+            text-align: right;
+            vertical-align: top;
+        }
+    }
+
+    &--textarea,
+    &--input {
+        padding: $space-half;
+        background-color: $color-secondary;
+        color: $color-primary;
+        width: 400px;
+        border: 1px solid $color-primary;
+        border-radius: $radius-default;
+    }
+
+    &--textarea {
+        height: 100px;
+
+        &__big {
+            height: 400px;
+        }
+    }
+
+    &--button {
+        display: inline-block;
+        border: 1px solid $color-primary;
+        border-radius: $radius-default;
+        background-color: $color-secondary;
+        color: $color-primary;
+        font-size: 14px;
+        padding: $space-half $space-default;
+        margin-right: $space-default;
+        cursor: pointer;
+        transition: color .5s, background .5s;
+
+        &:hover {
+            background-color: $color-primary;
+            color: $color-secondary;    
+        }
+    }
+}

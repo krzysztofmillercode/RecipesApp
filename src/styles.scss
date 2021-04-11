@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap');
+@import "./varriables.scss";
+
+body {
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    background-color: $color-secondary;
+    min-height: 100vh;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    padding-left: 0;
+    list-style: none;
+}
+
+button, input, textarea {
+    outline: 0;
+}
+
+.highlight {
+    background-color: $color-highlight;
+}

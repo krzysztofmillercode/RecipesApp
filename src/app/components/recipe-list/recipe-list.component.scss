@@ -1,0 +1,47 @@
+@import "../../../varriables.scss";
+
+.list {
+    text-align: center;
+}
+
+.list-item {
+    display: inline-block;
+    width: 300px;
+    border: 1px solid $color-primary;
+    margin: $space-half;
+    overflow: hidden;
+    border-radius: $radius-default;
+
+    &--picture {
+        width: 100%;
+        display: block;
+    
+        &__create {
+          height: 200px;
+          padding-bottom: 38px;
+          color: $color-primary;
+          font-weight: 800;
+          font-size: 210px;
+          font-family: 'Roboto', sans-serif;
+        }
+      }
+
+      &--title,
+      &--description {
+        color: black;
+        margin: 0;
+        text-align: left;
+        padding-left: $space-default;
+        padding: $space-default;
+      }
+    
+      &--title {
+        padding-bottom: 0;
+        font-size: 20px;
+        font-weight: bold;
+      }
+    
+      &--description {
+        font-weight: 400;
+      }
+}

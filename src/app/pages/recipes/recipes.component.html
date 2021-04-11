@@ -1,0 +1,3 @@
+<app-search [recipes]="recipes" (changeAvailableRecipes)="setAvailableRecipes($event)"></app-search>
+<app-recipe-list [recipes]="currentRecipes" [hasCreate]="true"></app-recipe-list>
+<app-pagination [recipes]="availableRecipes" (changeCurrentRecipes)="setCurrentRecipes($event)"></app-pagination>

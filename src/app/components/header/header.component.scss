@@ -1,0 +1,38 @@
+@import "../../../varriables.scss";
+
+.header {
+    background-color: $color-primary;
+    padding: $space-default;
+    
+    &--link {
+        display: inline-block;
+        margin: 0 $space-default 0 $space-default;
+        padding-left: $space-default;
+        color: $color-secondary;
+        border-left: 1px solid $color-secondary;
+        font-size: 23px;
+        cursor: pointer;
+        vertical-align: middle;
+        font-family: 'Raleway', sans-serif;
+        
+        &__logo {
+            border-left: none;
+            margin-left: $space-double;
+            margin-right: $space-double;
+            padding: 0;
+            font-weight: 900;
+            font-size: 45px;
+            font-family: 'Lobster', cursive;
+        }
+
+        &:hover {
+            animation: normal;    
+            animation-duration: 100ms;
+        }
+    }
+
+    &--link-text {
+        margin: 0;
+    }
+    
+}

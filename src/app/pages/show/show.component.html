@@ -1,0 +1,10 @@
+<div *ngIf="recipe">
+    <img src="{{ recipe.pictureUrl }}" alt="{{ recipe.name }}" />
+    <h1>{{ recipe.name }}, Kuchnia {{ recipe.cousine }}</h1>
+    <h2>Czas przygotowania: {{ recipe.cookingTime }} minut</h2>
+    <h2>Posiłek: {{ recipe.type }}</h2>
+    <h3>Składniki: {{ recipe.ingredients }}</h3>
+    <h3>Przepis:</h3>
+    <p>{{ recipe.description }}</p>
+    <a class="show--edit" routerLink="/edit/{{id}}">Edytuj</a>
+</div>

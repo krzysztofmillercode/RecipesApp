@@ -1,0 +1,53 @@
+[
+	{
+		"id": 0,
+		"name": "type",
+		"title": "Rodzaj dania",
+		"description": "Posiłek - zestaw potraw lub produktów żywnościowych spożywanych stosownie do określonej pory dnia. Główne posiłki w Polsce to: śniadanie, obiad, podwieczorek i kolacja. W innych strefach kulturowych może to być np. lunch, brunch lub iftar. Uroczystą formą posiłku jest przyjęcie.",
+		"values": [
+			{
+				"id": 0,
+				"name": "Obiad",
+				"title": "Obiad",
+				"pictureUrl": "https://static.smaker.pl/photos/c/c/f/ccf8c4bbd50d55c80a31e471f2327c9f_352543_5f5026aa32a7b_wm.jpg",
+				"description": "Obiad – główny i zarazem najobfitszy posiłek w ciągu dnia, spożywany w Polsce najczęściej między godziną 12 a 16. Tradycyjnie składa się z dwóch dań – w Polsce zwykle z zupy oraz dania głównego. W Polsce, w porównaniu z innymi częściami Europy, rozwinęła się bardzo bogata tradycja zup - wysoce zróżnicowanych pod względem regionu czy sezonu. Drugie danie w środowiskach wiejskich było przygotowywane głównie na bazie mąki i od XVII wieku – ziemniaków. Na talerzach bogatszych grup społecznych dominowały potrawy mięsne."
+			},
+			{
+				"id": 1,
+				"name": "Deser",
+				"title": "Deser",
+				"pictureUrl": "https://www.oetker.pl/Recipe/Recipes/oetker.pl/pl-pl/dessert/image-thumb__51370__RecipeDetail/deser-z-biszkoptami-i-malinami.jpg",
+				"description": "Deser (wyraz pochodzi od francuskiego desservir = „sprzątać ze stołu”) – słodka potrawa podawana jako osobne słodkie danie na koniec posiłku (obiadu, kolacji lub przyjęcia), ale także na podwieczorek albo podczas niezobowiązującego spotkania o dowolnej porze dnia"
+			}
+		]
+	},
+	{
+		"id": 1,
+		"name": "cousine",
+		"title": "Kuchnia",
+		"description": "Posiłek - zestaw potraw lub produktów żywnościowych spożywanych stosownie do określonej pory dnia. Główne posiłki w Polsce to: śniadanie, obiad, podwieczorek i kolacja. W innych strefach kulturowych może to być np. lunch, brunch lub iftar. Uroczystą formą posiłku jest przyjęcie.",
+		"values": [
+			{
+				"id": 0,
+				"name": "Polska",
+				"title": "Kuchnia Polska",
+				"pictureUrl": "https://www.pyszne.pl/foodwiki/uploads/sites/7/2018/12/kuchnia-polska-2.jpg",
+				"description": "Kuchnia polska – na kształtowanie się swoistych cech kuchni polskiej miały wpływ przemiany historyczne. Na przestrzeni dziejów kuchnia polska ulegała wpływom i zmianom regionalnym, zwłaszcza że tereny Rzeczypospolitej Polskiej historycznie zamieszkiwała zmieniająca się mozaika narodów. W efekcie silne są kulinarne wpływy wschodnie (tatarsko-tureckie, wcześniej mongolskie), rusińskie, niemieckie, francuskie, włoskie i żydowskie." 
+			},
+			{
+				"id": 1,
+				"name": "Włoska",
+				"title": "Kuchnia Włoska",
+				"pictureUrl": "https://www.pyszne.pl/foodwiki/uploads/sites/7/2018/02/kuchnia-wloska.jpg",
+				"description": "Kuchnia włoska – jedna z dwóch najbardziej popularnych kuchni europejskich obok kuchni francuskiej. Kuchnia włoska charakteryzuje się korzystaniem z dużej ilości warzyw i przypraw takich jak oregano, bazylia, pieprz, estragon, tymianek, rozmaryn, a także używaniem parmezanu. W kuchni tej dość powszechnie stosuje się też oliwę, pomidory oraz cebulę i czosnek, a także oliwki. Kuchnia włoska wyspecjalizowała się szczególnie w potrawach mącznych oraz w rybnych i owocach morza. Charakterystyczną cechą kuchni włoskiej jest przygotowywanie dań świeżych ze składników dostępnych w okolicy, o danej porze roku. Włosi pod względem zasad kulinarnych są bardzo przywiązani do swojej tradycji. W kuchni włoskiej nie ma miejsca na ustępstwa pod względem jakości składników lub dodatków. Pewną tradycją jest także stała w całych Włoszech pora spożywania poszczególnych posiłków w ciągu dnia." 
+			},
+			{
+				"id": 2,
+				"name": "Tajska",
+				"title": "Kuchnia Tajska",
+				"pictureUrl": "https://www.pyszne.pl/foodwiki/uploads/sites/7/2018/02/kuchnia-tajska-3.jpg",
+				"description": "Kuchnia tajska – sztuka kulinarna Tajlandii. Na przestrzeni wieków kształtowała się pod wyraźnym wpływem kuchni chińskiej z północy i kuchni indyjskiej z zachodu. Choć generalnie pod wieloma względami bliższa tej pierwszej, wpływy kuchni indyjskiej są również wyraźne, przykładem może być częstsze niż w kuchni Chin występowanie ostrych dań typu curry. Mimo wyraźnych wpływów z zewnątrz oryginalność tajskiej kuchni wynika jednak głównie ze stosowanych przez Tajów własnych oryginalnych składników. Jednym z najbardziej charakterystycznych jest mleczko kokosowe oraz szereg aromatycznych przypraw takich jak trawa cytrynowa, świeży imbir czy liście limonki." 
+			}
+		]
+	}
+]

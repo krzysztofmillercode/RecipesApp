@@ -1,0 +1,18 @@
+<div class="search">
+    <label class="search--label">
+        Name:
+        <input 
+            class="search--input"
+            (change)="updateSearchPhrase($event)"
+            (keyup)="updateSearchPhrase($event)"
+        />
+    </label>
+    <label class="search--label">
+        Cooking Time:
+        <input 
+            class="search--input"
+            (change)="updateMaxTime($event)"
+            (keyup)="updateMaxTime($event)"
+        />
+    </label>
+</div>
